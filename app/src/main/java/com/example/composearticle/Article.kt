@@ -13,8 +13,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.material3.Text
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.composearticle.ui.theme.ComposeArticleTheme
 
 @Composable
 fun Article(modifier: Modifier = Modifier) {
@@ -45,13 +43,5 @@ fun Article(modifier: Modifier = Modifier) {
             textAlign = TextAlign.Justify,
             modifier = Modifier.padding(16.dp)
         )
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun ArticlePreview() {
-    ComposeArticleTheme {
-        Article()
     }
 }

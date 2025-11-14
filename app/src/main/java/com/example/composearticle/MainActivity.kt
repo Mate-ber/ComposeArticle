@@ -8,6 +8,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.padding
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.composearticle.ui.theme.ComposeArticleTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,5 +26,13 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ArticlePreview() {
+    ComposeArticleTheme {
+        Article()
     }
 }
